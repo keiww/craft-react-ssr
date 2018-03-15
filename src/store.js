@@ -36,7 +36,7 @@ const middleware = [thunk]
 const enhancers = compose(
   applyMiddleware(...middleware)
 )
-const createStore = (inititalState = {}) => {
+const createStore = (initialState = {}) => {
   const store = _createStore(reducers, initialState, enhancers)
   return store
 }
