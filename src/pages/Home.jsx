@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { fetchGithubData } from '../store'
+import { fetchGithubData } from '../store/actions'
 
 class Home extends React.Component {
   componentDidMount () {
@@ -20,7 +20,7 @@ class Home extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  data: state.data
+  data: state.github.data
 })
 
 const mapDispatchToProps = {
