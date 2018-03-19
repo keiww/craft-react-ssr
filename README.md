@@ -34,3 +34,23 @@ src
     └── api.js
 ```
 
+See https://github.com/keiww/craft-react-ssr/tree/basic-web-app form source code.
+
+## Add Koa Server
+
+```
+yarn global add babel-cli
+yarn add koa nodemon babel-preset-env isomorphic-fetch babel-register ignore-styles
+mkdir server
+```
+
+```
+server
+├── assets.js
+├── helpers.js
+├── index.js
+├── render.js
+└── template.html
+```
+
+See https://github.com/keiww/craft-react-ssr/tree/add-koa-server form source code.

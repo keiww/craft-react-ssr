@@ -4,6 +4,9 @@ import { connect } from 'react-redux'
 import { fetchGithubData } from '../store/actions'
 
 class Home extends React.Component {
+  static async fetchData (dispatch, params) {
+    return dispatch(fetchGithubData())
+  }
   componentDidMount () {
     if (!this.hasData()) {
       this.props.fetchGithubData()
