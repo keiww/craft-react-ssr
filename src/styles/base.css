@@ -1,0 +1,9 @@
+html, body {
+  font: 14px/1.43 "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+pre {
+  padding: 12px;
+  font: 12px/1.6 "Source Code Pro", Monaco, monospace;
+  background: #f6f6f6;
+}
